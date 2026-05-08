@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'Crear/crear.dart';
-
 
 List<String> productos = [];
 void main() {
