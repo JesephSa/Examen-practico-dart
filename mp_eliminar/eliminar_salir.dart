@@ -1,13 +1,13 @@
 import 'dart:io';
+import '../main.dart'; 
 
 
-// Lista de Productos compartida
-List<String> Productos = [];
+
 
 // FUNCIÓN ELIMINAR PRODUCTO
 void eliminarProducto() {
 
-  if (Productos.isEmpty) {
+  if (productos.isEmpty) {
 
     print("No hay productos para eliminar");
 
@@ -15,9 +15,9 @@ void eliminarProducto() {
 
     print("\n===== LISTA DE PRODUCTOS =====");
 
-    for (int i = 0; i < Productos.length; i++) {
+    for (int i = 0; i < productos.length; i++) {
 
-      print("${i + 1}. ${Productos[i]}");
+      print("${i + 1}. ${productos[i]}");
 
     }
 
@@ -25,11 +25,11 @@ void eliminarProducto() {
 
     int indice = int.parse(stdin.readLineSync()!) - 1;
 
-    if (indice >= 0 && indice < Productos.length) {
+    if (indice >= 0 && indice < productos.length) {
 
-      print("Producto eliminado: ${Productos[indice]}");
+      print("Producto eliminado: ${productos[indice]}");
 
-      Productos.removeAt(indice);
+      productos .removeAt(indice);
 
     } else {
 
