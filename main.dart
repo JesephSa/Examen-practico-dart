@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'Crear/crear.dart';
+
 
 List<String> productos = [];
 void main() {
@@ -8,10 +10,11 @@ void main() {
   do {
     print("Bienvenido al Crud");
     print("Ingresa tu opción:");
-    print("1. Crear");
-    print("2. Modificar");
-    print("3. Eliminar");
-    print("4. Salir");
+    print("1. Agregar producto");
+    print("2. Listar productos");
+    print("3. Modificar producto");
+    print("4. Eliminar producto");
+    print("5. Salir");
 
     opcion = int.parse(stdin.readLineSync()!);
 
@@ -21,19 +24,23 @@ void main() {
         break;
 
       case 2:
-      modificar();
+      listar();
         break;
 
       case 3:
-      eliminar();
+      modificar();
         break;
 
       case 4:
+      eliminar();
+        break;
+
+      case 5:
         print("Saliendo del programa...");
         break;
 
       default:
         print("Opción no válida");
     }
-  } while (opcion != 4);
+  } while (opcion != 5);
 }

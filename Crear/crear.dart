@@ -10,7 +10,7 @@ void crear() {
 
   for (int i = 0; i < cantidadProductos; i++) {
     
-    print("Ingresa el nombre del producto ${i + 1}:");
+    print("Ingresa el nombre del productos ${i + 1}:");
     String nombre = stdin.readLineSync()!;
 
     print("Ingresa el precio del producto:");
