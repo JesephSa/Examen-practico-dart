@@ -1,6 +1,5 @@
 import 'dart:io';
 
-
 List<String> productos = [];
 void main() {
   int opcion;
